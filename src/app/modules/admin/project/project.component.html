@@ -1,0 +1,486 @@
+<div class="flex flex-col flex-auto min-w-0  px-12 sm:px-12">
+    <div class="flex flex-col w-full max-w-screen-xl mx-auto">
+        <div class="flex flex-col sm:flex-row items-center flex-auto sm:items-center min-w-0 my-8 sm:my-12">
+            <!-- Avatar and name -->
+            <div class="flex flex-auto items-center min-w-0">
+                <mat-icon role="button" routerLink="/projects">arrow_back</mat-icon>
+                <div class="flex min-w-0 ml-4 items-center">
+                    <div class="text-2xl md:text-5xl font-semibold tracking-tight leading-7 md:leading-snug truncate">
+                        Cara RN Sweat
+                    </div>
+                    <div class="flex items-center p-1 mx-2  bg-yellow-100 rounded-2xl">
+                        <mat-icon class="text-md text-yellow-600">check</mat-icon>
+                        <p class="text-yellow-600 font-semibold pr-2">
+                            Се извршува
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Actions -->
+            <div class="flex items-center mt-6 sm:mt-0 sm:ml-2 space-x-3">
+                <button class="mat-button bg-primary text-white rounded">
+                    <span>Заврши</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <mat-tab-group [@.disabled]="true">
+        <mat-tab label="Overview">
+            <ng-template matTabContent>
+                <div class="mt-10 sm:mt-0">
+                    <div>
+                        <!-- General info -->
+                        <div class="px-4 sm:px-0">
+                            <h1 class="text-lg font-medium leading-6 text-gray-900">General Information</h1>
+                            <p class="mt-1 text-sm text-gray-600">
+                                Податоци за проектната задачата од Проект
+                            </p>
+                        </div>
+
+                        <!-- Inputs -->
+                        <div class="flex flex-wrap -mx-3 mb-6 mt-2">
+                            <div class="w-full md:w-1/2 px-3 md:mb-0 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    Име на задачата
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="Разгледување на Angular" disabled>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Клиент
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="Пракса" disabled>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Приоритет
+                                </label>
+                                <select
+                                    class="appearance-none block w-full bg-gray-200 text-gray-500 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="Нормален" disabled>
+                                    <option value="normalen">Нормален</option>
+                                    <option value="zavresn">Заврешен</option>
+                                    <option value="na-cekanje">На чекање</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Статус
+                                </label>
+                                <select
+                                    class="appearance-none block w-full bg-gray-200 text-gray-500 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="Се извршува" disabled>
+                                    <option value="se-izvrsuva">Се извшува</option>
+                                    <option value="zavresn">Заврешен</option>
+                                    <option value="na-cekanje">На чекање</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Категорија
+                                </label>
+                                <select
+                                    class="appearance-none block w-full bg-gray-200 text-gray-600 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="Се извршува" disabled>
+                                    <option value="softver">Софтвер</option>
+                                    <option value="zavresn">Заврешен</option>
+                                    <option value="na-cekanje">На чекање</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Одговорен
+                                </label>
+                                <select
+                                    class="appearance-none block w-full bg-gray-200 text-gray-600 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="Се извршува" disabled>
+                                    <option value="praksa">praksa - IT</option>
+                                    <option value="zavresn">Заврешен</option>
+                                    <option value="na-cekanje">На чекање</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Датум на почеток
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="20/08/2021" disabled>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Датум на завршување
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="30/08/2021" disabled>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Additional info -->
+                        <div class="px-4 sm:px-0 mt-12">
+                            <h1 class="text-lg font-medium leading-6 text-gray-900">Additional information</h1>
+                            <p class="mt-1 text-sm text-gray-600">
+                                Дополнителни податоци за проектната задачата од Проект
+                            </p>
+                        </div>
+                        <!-- Inputs -->
+                        <div class="flex flex-wrap -mx-3 mb-6 mt-2">
+                            <div class="w-full md:w-1/2 px-3 md:mb-0 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    Времетраење
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="" placeholder="Внеси часови" disabled>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 md:mb-0 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    Учесниици
+                                </label>
+                                <div class="flex items-center w-full">
+                                    <span
+                                        class="w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                        <span class="text-xs px-3 font-bold bg-blue-500 text-white rounded py-2 mx-1">
+                                            praksa
+                                        </span>
+                                        <span class="text-xs px-3 font-bold bg-blue-500 text-white rounded py-2 mx-1">
+                                            test test
+                                        </span>
+                                    </span>
+                                    <input
+                                        class="appearance-none  disabled:opacity-50 block w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-last-name" type="text" disabled>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 md:mb-0 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    Предефинирани задачи
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="" placeholder="Избери предефинирани задачи"
+                                    disabled>
+                            </div>
+                            <div class="w-full md:w-1/2 px-3 md:mb-0 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    Зависи од задача
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-400 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" value="" placeholder="" disabled>
+                            </div>
+                            <div class="w-full px-3 md:mb-0 mt-4">
+                                <label class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    Опис
+                                </label>
+                                <textarea rows="5"
+                                    class="resize-none appearance-none block w-full bg-gray-200 py-3 px-4 text-gray-400 border border-gray-200 rounded px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" disabled>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Et itaque reiciendis exercitationem nihil obcaecati beatae
+                                    pariatur provident esse minus consequatur!
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <!-- Photos -->
+                        <section class="py-8">
+
+                            <div class="px-4 sm:px-0 mb-4">
+                                <h1 class="text-lg font-medium leading-6 text-gray-900">Project Photos/Filesp</h1>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    Слики од задачата од Проект
+                                </p>
+                            </div>
+
+                            <div class="flex flex-wrap -mx-2 -mb-8">
+                                <div class="md:w-1/4 px-2 mb-8"><img class="rounded shadow-md"
+                                        src="https://source.unsplash.com/random/1280x850" alt=""></div>
+                                <div class="md:w-1/4 px-2 mb-8"><img class="rounded shadow-md"
+                                        src="https://source.unsplash.com/random/1280x850" alt=""></div>
+                                <div class="md:w-1/4 px-2 mb-8">
+                                    <img class="rounded shadow-md"
+                                        src="https://imag.malavida.com/qa/qa-windows-10-1646.jpg" alt="">
+                                </div>
+                                <div class="md:w-1/4 px-2 mb-8">
+                                    <button
+                                        class="flex flex-col justify-center items-center text-center bg-gray-100 w-full border-dashed border-4 border-blue-500 h-full hover:bg-gray-300 text-blue font-bold py-2 px-4 rounded">
+                                        <span>
+                                            <mat-icon class="text-white bg-blue-500 rounded-2xl">add</mat-icon>
+                                        </span>
+                                        Add Photo/File
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </ng-template>
+        </mat-tab>
+
+        <mat-tab label="Comments">
+            <ng-template matTabContent>
+                <div class="flex flex-col flex-auto min-w-0">
+                    <div class="w-1/2 bg-white p-2 pt-4 rounded w-full max-w-screen-xl mx-auto">
+                        <div class="flex ml-3 items-center">
+                            <div class="mr-3">
+                                <img src="http://picsum.photos/50" alt="" class="rounded-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold">Itay Buyoy</h1>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-3 p-3 w-full">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Тип на порака</mat-label>
+                                <mat-select>
+                                    <mat-option value="option1">Напомена</mat-option>
+                                    <mat-option value="option2">Проблем Клиент</mat-option>
+                                    <mat-option value="option3">Соопштение</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+
+                            <textarea rows="3" class="border p-2 rounded w-full"
+                                placeholder="Write something..."></textarea>
+                        </div>
+
+                        <div class="flex justify-between mx-3">
+                            <div><button
+                                    class="px-4 py-1 bg-gray-800 text-white rounded font-light hover:bg-gray-700">Post</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/2 bg-white p-2 pt-4 rounded w-full max-w-screen-xl mx-auto my-4">
+                        <!--Comment 1-->
+                        <div class="w-full lg:max-w-full lg:flex">
+                            <div class="h-48 lg:h-auto flex-none bg-cover text-center overflow-hidden"
+                                style="background-image: url('/mountain.jpg')" title="Mountain">
+                            </div>
+                            <div class="bg-white p-4 flex flex-col justify-between leading-normal w-full">
+                                <div class="flex ml-3 items-center">
+                                    <div class="mr-3">
+                                        <img src="http://picsum.photos/50" alt="" class="rounded-full">
+                                    </div>
+                                    <div>
+                                        <h1 class="font-semibold">Itay Buyoy</h1>
+                                        <p class="font-xs text-gray-500">25/08/2021</p>
+                                    </div>
+                                    <div class="bg-gray-200 rounded ml-6">
+                                        <p class="font-xs text-gray-500 p-2 uppercase">проблем - клиент</p>
+                                    </div>
+
+                                </div>
+                                <div class="mb-4 ml-3 mt-4">
+                                    <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                                        exercitationem praesentium nihil.</p>
+                                </div>
+                                <div class="self-end">
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded mx-2">
+                                        Delete
+                                    </button>
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <!--Comment 2-->
+                        <div class="w-full lg:max-w-full lg:flex">
+                            <div class="h-48 lg:h-auto flex-none bg-cover text-center overflow-hidden"
+                                style="background-image: url('/mountain.jpg')" title="Mountain">
+                            </div>
+                            <div class="bg-white p-4 flex flex-col justify-between leading-normal w-full">
+                                <div class="flex ml-3 items-center">
+                                    <div class="mr-3">
+                                        <img src="http://picsum.photos/50" alt="" class="rounded-full">
+                                    </div>
+                                    <div>
+                                        <h1 class="font-semibold">Itay Buyoy</h1>
+                                        <p class="font-xs text-gray-500">25/08/2021</p>
+                                    </div>
+                                    <div class="bg-gray-200 rounded ml-6">
+                                        <p class="font-xs text-gray-500 p-2 uppercase">проблем - клиент</p>
+                                    </div>
+
+                                </div>
+                                <div class="mb-4 ml-3 mt-4">
+                                    <p class="text-gray-700 text-base">Клиентот нема доставено потребна документација.
+                                        Информиран е да достави!</p>
+                                </div>
+                                <div class="self-end">
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded mx-2">
+                                        Delete
+                                    </button>
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </ng-template>
+        </mat-tab>
+
+        <mat-tab label="Activity">
+            <ng-template matTabContent>
+                <div class="flex flex-col flex-auto min-w-0">
+                    <div class="w-1/2 bg-white p-2 pt-4 rounded w-full max-w-screen-xl mx-auto">
+                        <div class="flex ml-3 items-center">
+                            <div class="mr-3">
+                                <img src="http://picsum.photos/50" alt="" class="rounded-full">
+                            </div>
+                            <div>
+                                <h1 class="font-semibold">Itay Buyoy</h1>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-3 p-3 w-full">
+
+                            <mat-form-field appearance="outline" class="mr-2">
+                                <mat-label>Време</mat-label>
+                                <input matInput placeholder="Внеси часови">
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline" class="mr-2">
+                                <mat-label>Преостанато време</mat-label>
+                                <input matInput placeholder="Внеси часови">
+                            </mat-form-field>
+
+                            <textarea rows="3" class="border p-2 rounded w-full" placeholder="Опис"></textarea>
+                        </div>
+
+                        <div class="flex justify-between mx-3">
+                            <div><button
+                                    class="px-4 py-1 bg-gray-800 text-white rounded font-light hover:bg-gray-700">Post</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/2 bg-white p-2 pt-4 rounded w-full max-w-screen-xl mx-auto my-4">
+                        <!--Activity 1-->
+                        <div class="w-full lg:max-w-full lg:flex">
+                            <div class="h-48 lg:h-auto flex-none bg-cover text-center overflow-hidden"
+                                style="background-image: url('/mountain.jpg')" title="Mountain">
+                            </div>
+                            <div class="bg-white p-2 flex flex-col justify-between leading-normal w-full">
+                                <div class="flex ml-3 items-center">
+                                    <div class="mr-3">
+                                        <img src="http://picsum.photos/50" alt="" class="rounded-full">
+                                    </div>
+                                    <div>
+                                        <h1 class="font-semibold">Itay Buyoy</h1>
+                                        <p class="font-xs text-gray-500">25/08/2021</p>
+                                    </div>
+
+                                </div>
+                                <div class="mb-4 ml-3 mt-4">
+                                    <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                                        exercitationem praesentium nihil.</p>
+                                    <div class="flex pt-2">
+                                        <div>
+                                            <p class="pr-2 font-semibold">Време</p>
+                                            <p>1.00</p>
+                                        </div>
+                                        <div>
+                                            <p class="pr-2 font-semibold">Преостанато Време</p>
+                                            <p>2.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="self-end">
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded mx-2">
+                                        Delete
+                                    </button>
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <!--Activty 2-->
+                        <div class="w-full lg:max-w-full lg:flex">
+                            <div class="h-48 lg:h-auto flex-none bg-cover text-center overflow-hidden"
+                                style="background-image: url('/mountain.jpg')" title="Mountain">
+                            </div>
+                            <div class="bg-white p-2 flex flex-col justify-between leading-normal w-full">
+                                <div class="flex ml-3 items-center">
+                                    <div class="mr-3">
+                                        <img src="http://picsum.photos/50" alt="" class="rounded-full">
+                                    </div>
+                                    <div>
+                                        <h1 class="font-semibold">Itay Buyoy</h1>
+                                        <p class="font-xs text-gray-500">25/08/2021</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="mb-4 ml-3 mt-4">
+                                    <p class="text-gray-700 text-base">Клиентот нема доставено потребна документација.
+                                        Информиран е да достави!</p>
+                                    <div class="flex pt-2">
+                                        <div>
+                                            <p class="pr-2 font-semibold">Време</p>
+                                            <p>1.00</p>
+                                        </div>
+                                        <div>
+                                            <p class="pr-2 font-semibold">Преостанато Време</p>
+                                            <p>2.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="self-end">
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded mx-2">
+                                        Delete
+                                    </button>
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </mat-tab>
+    </mat-tab-group>
+</div>

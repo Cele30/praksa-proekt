@@ -1,0 +1,17 @@
+.mat-tab-body.mat-tab-body-active {
+    animation: fade 1s;
+  }
+  /* .mat-tab-label-active{
+    background-color: #3398dc !important;
+    opacity: 1 !important;
+    border-radius: none !important;
+    }   */
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }

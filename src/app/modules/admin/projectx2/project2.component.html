@@ -1,0 +1,103 @@
+<div class="flex flex-col flex-auto min-w-0  px-8 sm:px-8">
+
+    <div class="w-full p-4">
+        <div class="c-card block bg-white shadow-md rounded-lg overflow-hidden p-4">
+            <div class="flex items-center pb-4">
+                <div class="pr-6">
+                    <h2 class="mb-1 font-bold">Име на задача</h2>
+                    <p class="text-sm">Разгледување на Angular</p>
+                </div>
+
+                <div class="p-6 text-sm text-gray-700">
+                    <h1 class="mb-1 font-bold">Клиент</h1>
+                    <span>Никоб</span>
+                </div>
+
+                <div class="p-6 text-sm text-gray-700">
+                    <h1 class="mb-1 font-bold">Статус</h1>
+                    <span>Се извршува</span>
+                </div>
+
+                <div class="p-6 text-sm text-gray-700">
+                    <h1 class="mb-1 font-bold">Приоритет</h1>
+                    <span>Нормален</span>
+                </div>
+
+                <div class="p-6 text-sm text-gray-700">
+                    <h1 class="mb-1 font-bold">Датум на почеток</h1>
+                    <span>20/08/2021</span>
+                </div>
+
+                <div class="p-6 border-r text-sm text-gray-700">
+                    <h1 class="mb-1 font-bold">Датум на завршување</h1>
+                    <span>30/08/2021</span>
+                </div>
+
+
+
+
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-4 rounded">
+                    Заврши
+                </button>
+
+            </div>
+
+            <div class="border-t pt-4 pb-12">
+                <h2 class="mt-2 mb-2 font-bold">Опис</h2>
+                <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, commodi!
+                    Praesentium eligendi labore dicta debitis commodi eum minima, officiis quo fugiat doloribus
+                    inventore, earum animi et sit amet ducimus quos odio. Ab vitae beatae consequatur. Iusto sunt
+                    aliquid consectetur velit dolorum sequi aut perferendis consequuntur autem porro, quis, vel error?
+                </p>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-3 gap-4 my-6">
+            <div class="col-span-2">
+                <mat-tab-group animationDuration="0ms">
+                    <mat-tab label="Коментар">
+                        <ng-template matTabContent>
+                            <div class="flex flex-col flex-auto min-w-0">
+                                <div class="w-1/2 bg-white p-2 pt-4 rounded w-full max-w-screen-xl mx-auto">
+                                    <div class="flex ml-3 items-center">
+                                        <div class="mr-3">
+                                            <img src="http://picsum.photos/50" alt="" class="rounded-full">
+                                        </div>
+                                        <div>
+                                            <h1 class="font-semibold">Itay Buyoy</h1>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="mt-3 p-3 w-full">
+                                        <mat-form-field appearance="outline">
+                                            <mat-label>Тип на порака</mat-label>
+                                            <mat-select>
+                                                <mat-option value="option1">Напомена</mat-option>
+                                                <mat-option value="option2">Проблем Клиент</mat-option>
+                                                <mat-option value="option3">Соопштение</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+
+                                        <textarea rows="3" class="border p-2 rounded w-full"
+                                            placeholder="Write something..."></textarea>
+                                    </div>
+
+                                    <div class="flex justify-between mx-3">
+                                        <div><button
+                                                class="px-4 py-1 bg-gray-800 text-white rounded font-light hover:bg-gray-700">Post</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </mat-tab>
+                    <mat-tab label="Работа">Content 2</mat-tab>
+                </mat-tab-group>
+            </div>
+            <div class="bg-white">5</div>
+        </div>
+    </div>
+</div>
