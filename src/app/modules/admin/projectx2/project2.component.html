@@ -97,10 +97,11 @@
                                     </div>
                                 </div>
 
-                                <div class="w-1/2 bg-white p-2 pt-4 rounded w-full max-w-screen-xl mx-auto my-4">
+                                <div
+                                    class="w-1/2 bg-white p-2 pt-4 rounded w-full max-w-screen-xl mx-auto my-4 h-90 overflow-y-auto ">
                                     <!--Comment 1-->
                                     <div class="w-full lg:max-w-full lg:flex">
-                                        <div class="h-48 lg:h-auto flex-none bg-cover text-center overflow-hidden"
+                                        <div class="h-48 lg:h-auto flex-none bg-cover text-center"
                                             style="background-image: url('/mountain.jpg')" title="Mountain">
                                         </div>
                                         <div class="bg-white p-4 flex flex-col justify-between leading-normal w-full">
@@ -139,7 +140,44 @@
                                     <mat-divider></mat-divider>
                                     <!--Comment 2-->
                                     <div class="w-full lg:max-w-full lg:flex">
-                                        <div class="h-48 lg:h-auto flex-none bg-cover text-center overflow-hidden"
+                                        <div class="h-48 lg:h-auto flex-none bg-cover text-center "
+                                            style="background-image: url('/mountain.jpg')" title="Mountain">
+                                        </div>
+                                        <div class="bg-white p-4 flex flex-col justify-between leading-normal w-full">
+                                            <div class="flex ml-3 items-center">
+                                                <div class="mr-3">
+                                                    <img src="http://picsum.photos/50" alt="" class="rounded-full">
+                                                </div>
+                                                <div>
+                                                    <h1 class="font-semibold">Itay Buyoy</h1>
+                                                    <p class="font-xs text-gray-500">25/08/2021</p>
+                                                </div>
+                                                <div class="bg-gray-200 rounded ml-6">
+                                                    <p class="font-xs text-gray-500 p-2 uppercase">проблем - клиент</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="mb-4 ml-3 mt-4">
+                                                <p class="text-gray-700 text-base">Клиентот нема доставено потребна
+                                                    документација.
+                                                    Информиран е да достави!</p>
+                                            </div>
+                                            <div class="self-end">
+                                                <button
+                                                    class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded mx-2">
+                                                    Delete
+                                                </button>
+                                                <button
+                                                    class="bg-blue-500 hover:bg-blue-700 text-white text-center py-2 px-4 rounded">
+                                                    Edit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <mat-divider></mat-divider>
+                                    <!--Comment 3-->
+                                    <div class="w-full lg:max-w-full lg:flex">
+                                        <div class="h-48 lg:h-auto flex-none bg-cover text-center "
                                             style="background-image: url('/mountain.jpg')" title="Mountain">
                                         </div>
                                         <div class="bg-white p-4 flex flex-col justify-between leading-normal w-full">
@@ -181,7 +219,32 @@
                     <mat-tab label="Работа">Content 2</mat-tab>
                 </mat-tab-group>
             </div>
-            <div class="bg-white shadow-md">5</div>
+            <div class="bg-white shadow-md h-2/3">
+                <mat-list class="overflow-y-auto">
+                    <div mat-subheader class="flex item-center justify-between">
+                        Members
+                        <mat-icon class="cursor-pointer">add</mat-icon>
+                    </div>
+                    <mat-list-item *ngFor="let user of users" class="group hover:bg-gray-100 overflow-y-auto">
+                        <mat-icon mat-list-icon>portrait</mat-icon>
+                        <div mat-line>{{user}}</div>
+                        <mat-icon class="cursor-pointer hidden group-hover:block">delete</mat-icon>
+                    </mat-list-item>
+                    <mat-divider></mat-divider>
+                    <div mat-subheader class="flex item-center justify-between">
+                        Attachments
+                        <mat-icon class="cursor-pointer">add</mat-icon>
+                    </div>
+                    <div class="h-50 overflow-y-auto">
+                        <mat-list-item *ngFor="let file of files" class="group hover:bg-gray-100">
+                            <mat-icon mat-list-icon>insert_drive_file</mat-icon>
+                            <div mat-line>{{file.name}}</div>
+                            <div mat-line> {{file.updated | date}} </div>
+                            <mat-icon class="cursor-pointer hidden group-hover:block">delete</mat-icon>
+                        </mat-list-item>
+                    </div>
+                </mat-list>
+            </div>
         </div>
     </div>
 </div>

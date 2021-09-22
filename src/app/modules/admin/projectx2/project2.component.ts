@@ -7,5 +7,16 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 
 export class Project2Component {
-    constructor() { console.log('da'); }
+    users = ['Praksa', 'Test', 'John'];
+    files = [
+        {
+          name: 'webdesign.pdf',
+          updated: new Date('2/20/16'),
+        },
+        {
+          name: 'newlogo.png',
+          updated: new Date('1/18/16'),
+        },
+      ];
+    constructor() { }
 }

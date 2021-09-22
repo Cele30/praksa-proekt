@@ -4,6 +4,10 @@ import { Project2Component } from 'app/modules/admin/projectx2/project2.componen
 import {MatTabsModule} from '@angular/material/tabs';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
+
 
 
 const exampleRoutes: Route[] = [
@@ -21,7 +25,10 @@ const exampleRoutes: Route[] = [
         RouterModule.forChild(exampleRoutes),
         MatTabsModule,
         MatSelectModule,
-        MatDividerModule
+        MatDividerModule,
+        MatListModule,
+        MatIconModule,
+        CommonModule
     ]
 })
 export class Project2Module {
